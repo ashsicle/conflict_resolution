@@ -1,6 +1,6 @@
 'use strict'
 
-console.log('Loaded map.js')
+console.log('Loaded map_ei.js')
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiYXNoc2ljbGUiLCJhIjoiY2pzcGlqeDFrMHh3dTQ1bGp5c3ozN3N4ciJ9.Bg-amNI9jqeWLDkQMylkmQ'
 

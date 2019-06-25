@@ -8,7 +8,7 @@ let map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/ashsicle/cjx27mx0p697f1cp92ct3p2id',
     center: [-66.473054,18.220031],
-    zoom: 16
+    zoom: 8
 })
 
 let navigation = new mapboxgl.NavigationControl({

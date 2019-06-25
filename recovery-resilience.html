@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />    
+    <title>Recovery & Resilience</title>     
+
+    <!-- discourage the browser from caching the page -->    
+    <meta http-equiv='Cache-Control' content='no-cache, no-store, must-revalidate' />
+    <meta http-equiv='Pragma' content='no-cache' />
+    <meta http-equiv='Expires' content='0' />    
+
+    <!-- tells mobile devices how to scale the page -->    
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <!-- stylesheet links -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' />     
+    <link href='style.css' rel='stylesheet' />
+
+    <!-- javascript links -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js'></script>
+
+</head>
+<body>
+    
+    <nav id="menu"></nav>
+    <div id='map'></div>
+    <div id='info'></div>
+
+    <script src='map_rr.js'></script>
+    <script>
+        var toggleableLayerIds = ['Recovery and Resilience Decision Map', 'Population Density', 'Days without Power', 'Flood Risk Zones', 'Hurricane Maria Damage'];
+        
+        for (var i = 0; i < toggleableLayerIds.length; i++) {
+            var id = toggleableLayerIds[i];
+ 
+            var link = document.createElement('a');
+            link.href = '#';
+            link.className = 'active';
+            link.textContent = id;
+ 
+            link.onclick = function (e) {
+                var clickedLayer = this.textContent;
+                e.preventDefault();
+                e.stopPropagation();
+ 
+                var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+ 
+                if (visibility === 'visible') {
+                    map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+                    this.className = '';
+                } else {
+                    this.className = 'active';
+                    map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+                }
+            };
+ 
+            var layers = document.getElementById('menu');
+            layers.appendChild(link);
+        }
+    </script>
+    
+</body>
+</html>

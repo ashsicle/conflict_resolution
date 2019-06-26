@@ -45,10 +45,22 @@ body, html {
 }
  
 #menu a.active {
-    background-color: #164c83;
+/*     background-color: #164c83; */
     color: #fff;
 }
- 
-#menu a.active:hover {
+
+#ei > #menu a.active {
+    background-color: #164c83;
+}
+
+#ei > #menu a.active:hover {
     background: #0f3357;
+}
+
+#rr > #menu a.active:hover {
+    background: #168331;
+}
+
+#rr > #menu a.active:hover {
+    background: #0f5721;
 }

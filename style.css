@@ -64,3 +64,11 @@ body, html {
 #rr > #menu a.active:hover {
     background: #0f5721;
 }
+
+#combined > #menu a.active {
+    background-color: #3d3329;
+}
+
+#combined > #menu a.active:hover {
+    background: #0f0d0a;
+}

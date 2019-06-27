@@ -11,4 +11,4 @@ let map = new mapboxgl.Map ({
   zoom: 8
 })
         
-var toggleableLayerIds = ['External Investors Decision Map', 'Hotels', 'Outdoor Leisure', 'Urban Destinations', 'Development Areas'];
+var toggleableLayerIds = ['External Investors Decision Model', 'Hotels', 'Outdoor Leisure', 'Urban Destinations', 'Development Areas'];

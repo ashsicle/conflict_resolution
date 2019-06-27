@@ -11,4 +11,4 @@ let map = new mapboxgl.Map ({
   zoom: 8
 })
         
-var toggleableLayerIds = ['Local Residents Decision Map', 'Population Density', 'Community Services', 'Health Services', 'Education Services'];
+var toggleableLayerIds = ['Local Residents Decision Model', 'Population Density', 'Community Services', 'Health Services', 'Education Services'];

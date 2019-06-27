@@ -11,4 +11,4 @@ let map = new mapboxgl.Map({
     zoom: 8
 })
         
-var toggleableLayerIds = ['Recovery and Resilience Decision Map', 'Population Density', 'Days without Power', 'Flood Risk Zones', 'Hurricane Maria Damage'];
+var toggleableLayerIds = ['Recovery and Resilience Decision Model', 'Population Density', 'Days without Power', 'Flood Risk Zones', 'Hurricane Maria Damage'];

@@ -4,5 +4,6 @@ Research project for the Spring 2019 Conflict Urbanism Puerto Rico seminar offer
 Conflict Resolution investigates several datasets as layers within a decision model. Considering values that represent different demographic stakeholders, the decision model dissects how Hurricane Maria relief funds might be prioritized and distributed within Puerto Rico.
 
 This project includes:
-- Geospatial Decision Model (GIS, ArcMap)
-- Mapbox
+- Markdown, HTML, CSS, JavaScript
+- Decision Model / Geospatial Analysis (GIS, ArcMap)
+- Webmapping (Mapbox)

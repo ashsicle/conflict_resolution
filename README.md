@@ -5,5 +5,5 @@ Conflict Resolution investigates several datasets as layers within a decision mo
 
 This project includes:
 - Markdown, HTML, CSS, JavaScript
-- Decision Model / Geospatial Analysis (GIS, ArcMap)
+- Decision Model / Geospatial Analysis & Visualization (GIS, ArcMap)
 - Webmapping (Mapbox)
